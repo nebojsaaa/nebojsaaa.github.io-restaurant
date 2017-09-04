@@ -1,31 +1,12 @@
-var dish1 = 0;
-var dish2 = 0;
-var dish3 = 0;
-var dish4 = 0;
-var dish5 = 0;
+/* Open the sidenav */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
 
-    function count() {
-    	if (document.getElementById("dish1").clicked() == true) {
-    		dish1 += 1;
-    		document.getElementById("dish1").innerHTML = dish1; 
-    	}
-    	else if (document.getElementById("dish2").click() == true) {
-    		dish2 += 1;
-    		document.getElementById("dish2").innerHTML = dish2; 
-    	}
-    	else if (document.getElementById("dish3").click() == true) {
-    		dish3 += 1;
-    		document.getElementById("dish3").innerHTML = dish3; 
-    	}
-    	else if (document.getElementById("dish4").click() == true) {
-    		dish4 += 1;
-    		document.getElementById("dish4").innerHTML = dish4; 
-    	}
-    	else if (document.getElementById("dish1").click() == true) {
-    		dish5 += 1;
-    		document.getElementById("dish5").innerHTML = dish5; 
-    	}
-    };
+/* Close/hide the sidenav */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
 
 $( document ).ready(function() {
 
@@ -61,6 +42,31 @@ $( document ).ready(function() {
 	});
 
 
+	$("#side-menu").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#sec-menu").offset().top
+	    }, 900);
+	});
+
+	$("#side-dish").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#sec-dish").offset().top
+	    }, 900);
+	});
+
+	$("#side-about").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#sec-about").offset().top
+	    }, 900);
+	});
+
+	$("#side-gallery").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#sec-gallery").offset().top
+	    }, 900);
+	});
+
+
 	$('.slider').slick({
 		dots: true,
 	    infinite: true,
@@ -72,6 +78,18 @@ $( document ).ready(function() {
 		dots: true,
 	    infinite: true,
 	    autoplay: true,
+	    slidesToShow: 1,
+		rows:1,
+		slidesPerRow: 1,
+    	responsive: [{ 
+        breakpoint: 600,
+        settings: {
+            arrows: true,
+            infinite: false,
+            rows:1,
+  			slidesPerRow: 1,
+            slidesToShow: 1
+        }}],
 	    autoplaySpeed: 5000
 	});
 

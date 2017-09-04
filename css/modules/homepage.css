@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$red".
-        on line 56 of scss/modules/homepage.scss
+        on line 55 of scss/modules/homepage.scss
 
-51: 		left: 50%;
-52: 		transform: translate(-50%, 0);
-53: 
-54: 		.slick-active  {
-55: 			button {
-56: 				background-color: $red;
-57: 			}
-58: 		}
-59: 
-60: 		li {
-61: 			display: inline-block;
+50: 		left: 50%;
+51: 		transform: translate(-50%, 0);
+52: 
+53: 		.slick-active  {
+54: 			button {
+55: 				background-color: $red;
+56: 			}
+57: 		}
+58: 
+59: 		li {
+60: 			display: inline-block;
 
 Backtrace:
-scss/modules/homepage.scss:56
+scss/modules/homepage.scss:55
 C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -98,4 +98,4 @@ C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$red\".\A         on line 56 of scss/modules/homepage.scss\A \A 51: 		left: 50%;\A 52: 		transform: translate(-50%, 0);\A 53: \A 54: 		.slick-active  {\A 55: 			button {\A 56: 				background-color: $red;\A 57: 			}\A 58: 		}\A 59: \A 60: 		li {\A 61: 			display: inline-block;"; }
+  content: "Error: Undefined variable: \"$red\".\A         on line 55 of scss/modules/homepage.scss\A \A 50: 		left: 50%;\A 51: 		transform: translate(-50%, 0);\A 52: \A 53: 		.slick-active  {\A 54: 			button {\A 55: 				background-color: $red;\A 56: 			}\A 57: 		}\A 58: \A 59: 		li {\A 60: 			display: inline-block;"; }

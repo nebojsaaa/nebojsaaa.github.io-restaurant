@@ -4,13 +4,23 @@
 	<title>Restaurant</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link href="css/lightbox.css" rel="stylesheet">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	<div id="mySidenav" class="sidenav">
+		<ul>
+			<li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+			<li><a id="side-menu" onclick="closeNav()" href="#">Menu</a></li>
+			<li><a id="side-dish" onclick="closeNav()" href="#">Diches</a></li>
+			<li><a id="side-about" onclick="closeNav()" href="#">About us</a></li>
+			<li><a id="side-gallery" onclick="closeNav()" href="#">Gallery</a></li>
+		</ul>
+	</div>
 	<nav class="content">
-		<img class="logo" src="img/logo.png" alt="logo">
-		<span class="burger"><img src="icons/burger.svg" alt="burger"></span>
+		<img class="logo" src="img/Logo.png" alt="logo">
+		<span class="burger" onclick="openNav()"></span>
 		<ul class="links">
 			<li><a id="menu" href="javascript:;">Menu</a></li>
 			<li><a id="dish" href="javascript:;">Diches</a></li>
@@ -18,6 +28,7 @@
 			<li><a id="gallery" href="javascript:;">Gallery</a></li>
 		</ul>
 	</nav>
+	
 	<header>
 		<div class="slider">
 			<div>
@@ -188,11 +199,13 @@
 		</div>
 	</section>
 	<section id="sec-dish" class="featured content">
-		<h2>Featured Dishes</h2>
+		<h2 class="padding">Featured Dishes</h2>
 		<div class="featured-container">
 			<div>
 				<div class="container">
-					<img class="dishes" src="img/dish1.png" alt="dish">
+					<div class="img-wrap">
+						<img class="dishes" src="img/dish1.png" alt="dish">
+					</div>
 					<span class="feature-desc">Fugiat nulla sint</span>
 					<span class="feature-price">$30</span>
 					<div class="svg-heart">
@@ -213,7 +226,9 @@
 					</div>
 				</div>
 				<div class="container">
-					<img class="dishes" src="img/dish2.png" alt="dish">
+					<div class="img-wrap">
+						<img class="dishes" src="img/dish2.png" alt="dish">
+					</div>
 					<span class="feature-desc">Daute irure dolor</span>
 					<span class="feature-price">$24</span>
 					<div class="svg-heart">
@@ -234,7 +249,9 @@
 					</div>
 				</div>
 				<div class="container">
-					<img class="dishes" src="img/dish3.png" alt="dish">
+					<div class="img-wrap">
+						<img class="dishes" src="img/dish3.png" alt="dish">
+					</div>
 					<span class="feature-desc">Officia deserunt<br>mollit</span>
 					<span class="feature-price">$60</span>
 					<div class="svg-heart">
@@ -255,7 +272,9 @@
 					</div>
 				</div>
 				<div class="container">
-					<img class="dishes" src="img/dish4.png" alt="dish">
+					<div class="img-wrap">
+						<img class="dishes" src="img/dish4.png" alt="dish">
+					</div>
 					<span class="feature-desc">Pim minim veniam</span>
 					<span class="feature-price">$17</span>
 					<div class="svg-heart">
@@ -278,7 +297,9 @@
 			</div>
 			<div>
 				<div class="container">
-					<img class="dishes" src="img/dish1.png" alt="dish">
+					<div class="img-wrap">
+						<img class="dishes" src="img/dish5.png" alt="dish">
+					</div>
 					<span class="feature-desc">Fugiat nulla sint</span>
 					<span class="feature-price">$30</span>
 					<div class="svg-heart">
@@ -299,7 +320,9 @@
 					</div>
 				</div>
 				<div class="container">
-					<img class="dishes" src="img/dish2.png" alt="dish">
+					<div class="img-wrap">
+						<img class="dishes" src="img/dish6.png" alt="dish">
+					</div>
 					<span class="feature-desc">Daute irure dolor</span>
 					<span class="feature-price">$24</span>
 					<div class="svg-heart">
@@ -320,7 +343,9 @@
 					</div>
 				</div>
 				<div class="container">
-					<img class="dishes" src="img/dish3.png" alt="dish">
+					<div class="img-wrap">
+						<img class="dishes" src="img/dish7.png" alt="dish">
+					</div>
 					<span class="feature-desc">Officia deserunt<br>mollit</span>
 					<span class="feature-price">$60</span>
 					<div class="svg-heart">
@@ -341,7 +366,9 @@
 					</div>
 				</div>
 				<div class="container">
-					<img class="dishes" src="img/dish4.png" alt="dish">
+					<div class="img-wrap">
+						<img class="dishes" src="img/dish8.png" alt="dish">
+					</div>
 					<span class="feature-desc">Pim minim veniam</span>
 					<span class="feature-price">$17</span>
 					<div class="svg-heart">
@@ -364,7 +391,9 @@
 			</div>
 			<div>
 				<div class="container">
-					<img class="dishes" src="img/dish1.png" alt="dish">
+					<div class="img-wrap">
+						<img class="dishes" src="img/dish1.png" alt="dish">
+					</div>
 					<span class="feature-desc">Fugiat nulla sint</span>
 					<span class="feature-price">$30</span>
 					<div class="svg-heart">
@@ -385,7 +414,9 @@
 					</div>
 				</div>
 				<div class="container">
-					<img class="dishes" src="img/dish2.png" alt="dish">
+					<div class="img-wrap">
+						<img class="dishes" src="img/dish2.png" alt="dish">
+					</div>
 					<span class="feature-desc">Daute irure dolor</span>
 					<span class="feature-price">$24</span>
 					<div class="svg-heart">
@@ -406,7 +437,9 @@
 					</div>
 				</div>
 				<div class="container">
-					<img class="dishes" src="img/dish3.png" alt="dish">
+					<div class="img-wrap">
+						<img class="dishes" src="img/dish3.png" alt="dish">
+					</div>
 					<span class="feature-desc">Officia deserunt<br>mollit</span>
 					<span class="feature-price">$60</span>
 					<div class="svg-heart">
@@ -427,7 +460,9 @@
 					</div>
 				</div>
 				<div class="container">
-					<img class="dishes" src="img/dish4.png" alt="dish">
+					<div class="img-wrap">
+						<img class="dishes" src="img/dish4.png" alt="dish">
+					</div>
 					<span class="feature-desc">Pim minim veniam</span>
 					<span class="feature-price">$17</span>
 					<div class="svg-heart">
@@ -450,7 +485,9 @@
 			</div>
 			<div>
 				<div class="container">
-					<img class="dishes" src="img/dish1.png" alt="dish">
+					<div class="img-wrap">
+						<img class="dishes" src="img/dish1.png" alt="dish">
+					</div>
 					<span class="feature-desc">Fugiat nulla sint</span>
 					<span class="feature-price">$30</span>
 					<div class="svg-heart">
@@ -471,7 +508,9 @@
 					</div>
 				</div>
 				<div class="container">
-					<img class="dishes" src="img/dish2.png" alt="dish">
+					<div class="img-wrap">
+						<img class="dishes" src="img/dish2.png" alt="dish">
+					</div>
 					<span class="feature-desc">Daute irure dolor</span>
 					<span class="feature-price">$24</span>
 					<div class="svg-heart">
@@ -492,7 +531,9 @@
 					</div>
 				</div>
 				<div class="container">
-					<img class="dishes" src="img/dish3.png" alt="dish">
+					<div class="img-wrap">
+						<img class="dishes" src="img/dish3.png" alt="dish">
+					</div>
 					<span class="feature-desc">Officia deserunt<br>mollit</span>
 					<span class="feature-price">$60</span>
 					<div class="svg-heart">
@@ -513,7 +554,9 @@
 					</div>
 				</div>
 				<div class="container">
-					<img class="dishes" src="img/dish4.png" alt="dish">
+					<div class="img-wrap">
+						<img class="dishes" src="img/dish4.png" alt="dish">
+					</div>
 					<span class="feature-desc">Pim minim veniam</span>
 					<span class="feature-price">$17</span>
 					<div class="svg-heart">
@@ -557,15 +600,25 @@
 		<h2>The gallery</h2>
 		<div class="img-container">
 			<div class="col">
-				<img src="img/gallery-img1.png" alt="gallery-img">
+				<div class="zoom">
+					<a href="img/gallery-img1.png" data-lightbox="roadtrip" data-title="Image 1"><img src="img/gallery-img1.png" alt="gallery-img"></a>
+				</div>
 			</div>
 			<div class="col">
-				<img src="img/gallery-img2.png" alt="gallery-img">
-				<img src="img/gallery-img3.png" alt="gallery-img">
+				<div class="zoom">
+					<a href="img/gallery-img2.png" data-lightbox="roadtrip" data-title="Image 2"><img src="img/gallery-img2.png" alt="gallery-img"></a>
+				</div>
+				<div class="zoom">
+					<a href="img/gallery-img3.png" data-lightbox="roadtrip" data-title="Image 3"><img src="img/gallery-img3.png" alt="gallery-img"></a>
+				</div>
 			</div>
 			<div class="col">
-				<img src="img/gallery-img4.png" alt="gallery-img">
-				<img src="img/gallery-img5.png" alt="gallery-img">
+				<div class="zoom">
+					<a href="img/gallery-img4.png" data-lightbox="roadtrip" data-title="Image 4"><img src="img/gallery-img4.png" alt="gallery-img"></a>
+				</div>
+				<div class="zoom">
+					<a href="img/gallery-img5.png" data-lightbox="roadtrip" data-title="Image 5"><img src="img/gallery-img5.png" alt="gallery-img"></a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -599,7 +652,8 @@
 	</footer>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
-	 <script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+	<script src="js/lightbox.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
